@@ -1,0 +1,14 @@
+node_modules/
+out/
+release/
+*.log
+.DS_Store
+android-app/.gradle/
+android-app/build/
+android-app/app/build/
+android-app/original-preview/
+android-app/app/src/main/assets/
+*.apk
+local.properties
+.env
+.env.*

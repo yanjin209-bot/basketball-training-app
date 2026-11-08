@@ -1,0 +1,65 @@
+.mobile-shell{position:relative;height:100%;width:100%;overflow:hidden}.mobile-header{position:relative;z-index:20;height:56px;display:flex;align-items:center;gap:10px;padding:0 16px;background:#090b0fee;border-bottom:1px solid #ffffff12}.mobile-logo{font-family:Oswald,sans-serif;font-weight:700;letter-spacing:.04em;font-size:20px}.mobile-logo:first-letter,.mobile-logo span{color:#ff6b20}.mobile-tag{font-size:10px;color:#8f98a5;letter-spacing:.12em}.mobile-header button{margin-left:auto;font-size:22px;color:#bbc3cf;min-width:44px;min-height:44px}.mobile-main{position:relative;z-index:5;height:calc(100% - 118px - env(safe-area-inset-bottom))}.mobile-nav{position:absolute;z-index:30;bottom:0;left:0;right:0;height:calc(62px + env(safe-area-inset-bottom));padding:4px 6px env(safe-area-inset-bottom);display:flex;justify-content:space-around;background:#101217f5;border-top:1px solid #ffffff18}.mobile-nav button{display:flex;flex:1;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#8993a1;font-size:10px}.mobile-nav button.active{color:#ff6b20}.more-icon{font-size:17px;line-height:20px}.mobile-menu{position:absolute;z-index:35;right:8px;bottom:calc(68px + env(safe-area-inset-bottom));width:min(260px,90vw);padding:8px;border:1px solid #ffffff20;border-radius:12px;background:#171a20;box-shadow:0 10px 40px #000b}.mobile-menu button{display:flex;width:100%;align-items:center;gap:12px;text-align:left;padding:11px;color:#e6e9ef}.mobile-menu button svg{color:#ff6b20}.mobile-menu small{margin-left:auto;color:#808996;font-size:10px}.mobile-onboarding{position:relative;z-index:5;display:flex;flex-direction:column;height:calc(100% - 56px);overflow:auto}.mobile-onboarding>div{min-height:100%;flex:none}.mobile-error{position:relative;z-index:5;padding:30px;color:#fff}.mobile-main [class*='px-10'],.mobile-main [class*='px-8'],.mobile-onboarding [class*='px-14']{padding-left:16px!important;padding-right:16px!important}.mobile-main [class*='grid-cols-[' ]{grid-template-columns:minmax(0,1fr)!important}.mobile-main .grid-cols-2,.mobile-main .grid-cols-3,.mobile-main .grid-cols-4,.mobile-main .grid-cols-5{grid-template-columns:repeat(2,minmax(0,1fr))}.mobile-main .grid-cols-6{grid-template-columns:repeat(3,minmax(0,1fr))}.mobile-main [class*='grid-cols-'][class*='minmax']{grid-template-columns:minmax(0,1fr)!important}.mobile-main .min-w-\[230px\]{min-width:0}.mobile-main .w-\[34\%\]{width:48%}.mobile-main .text-\[68px\]{font-size:42px}.mobile-main .text-\[64px\]{font-size:44px}.mobile-main .gap-6{gap:14px}.mobile-main .gap-4{gap:10px}.mobile-main input,.mobile-main select,.mobile-main textarea,.mobile-onboarding input{font-size:16px}.mobile-main button,.mobile-nav button{touch-action:manipulation}.mobile-onboarding .gap-10{gap:12px}.mobile-main [class*='grid-cols-\[minmax']{grid-template-columns:minmax(0,1fr)!important}
+.mobile-onboarding .text-\[110px\]{font-size:clamp(42px,12vw,70px)}.mobile-onboarding .text-\[42vh\]{font-size:30vw}.mobile-onboarding .grid-cols-5{grid-template-columns:repeat(3,minmax(0,1fr))}.mobile-onboarding .gap-16{gap:14px;flex-direction:column}.mobile-onboarding .text-\[64px\]{font-size:38px}.mobile-onboarding .relative.flex.flex-1.items-center.justify-center.overflow-hidden{overflow:auto;padding:20px 16px}.mobile-onboarding .relative.flex.min-h-0.flex-1{min-height:auto}.mobile-onboarding .h-40{height:105px}.mobile-onboarding .text-\[44px\]{font-size:32px}
+/* Phone widths: preserve readable text and keep tabular columns together. */
+@media (max-width:600px){
+ .mobile-main,.mobile-onboarding{min-width:0}.mobile-main h1,.mobile-main h2,.mobile-main h3,.mobile-onboarding h1,.mobile-onboarding h2{word-break:normal;overflow-wrap:normal;line-height:1.2}
+ .mobile-main p,.mobile-onboarding p{word-break:normal;overflow-wrap:break-word;line-height:1.6}
+ .mobile-main [data-page] {min-width:0}
+ .mobile-main[data-page="career"] .min-h-\[520px\]{min-height:480px}
+ .mobile-main[data-page="career"] .min-h-\[520px\]>.relative{padding:18px}
+ .mobile-main[data-page="career"] .min-h-\[520px\] .w-\[34\%\]{width:190px;max-width:58%;min-width:0}
+ .mobile-main[data-page="career"] .min-h-\[520px\] .gap-3{gap:5px}
+ .mobile-main[data-page="career"] .min-h-\[520px\] .max-w-\[48\%\]{max-width:58%;font-size:clamp(30px,9vw,42px)}
+ .mobile-main[data-page="career"] .mb-4.flex.items-center{flex-wrap:wrap;gap:8px}
+ .mobile-main[data-page="career"] .mb-4.flex.items-center>.ml-auto{margin-left:0}
+ .mobile-main[data-page="training"] [class*="grid-cols-[110px"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px}
+ .mobile-main[data-page="training"] [class*="grid-cols-[110px"].tag{display:none}
+ .mobile-main[data-page="training"] [class*="grid-cols-[110px"] span{min-width:0;overflow-wrap:anywhere}
+ .mobile-main[data-page="stats"] .grid-cols-5{grid-template-columns:repeat(5,minmax(58px,1fr))!important}
+ .mobile-main[data-page="stats"] .grid-cols-5>*,.mobile-main[data-page="stats"] .grid-cols-6>*{min-width:0;word-break:normal}
+ .mobile-main[data-page="stats"] .grid-cols-5{font-size:11px;gap:2px}
+ .mobile-main[data-page="coach"]>div{height:auto!important;min-height:100%}
+ .mobile-main[data-page="coach"] [class*="grid-cols-"]{display:flex;flex-direction:column}
+ .mobile-main[data-page="coach"] [class*="grid-cols-"]>div:last-child{min-height:480px}
+ .mobile-main[data-page="player"] [class*="grid-cols-[auto"]{display:flex;flex-direction:column;align-items:center}
+ .mobile-main .grid>*{min-width:0}.mobile-main .panel{max-width:100%}
+ .mobile-main .field{min-width:0;max-width:100%}.mobile-main select{max-width:100%}
+ .mobile-onboarding .grid-cols-5{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .mobile-onboarding .grid-cols-5 button:last-child{grid-column:span 2}
+ .mobile-onboarding .tag{letter-spacing:.1em}
+ .mobile-shell [class*="fixed inset-0"][class*="p-6"]{padding:10px}
+ .mobile-shell [class*="max-h-[86vh]"]{max-height:90dvh;padding:16px}
+}
+@media(max-width:600px){
+ .mobile-main .page-header{display:flex;flex-direction:column;align-items:stretch;gap:16px;margin-bottom:18px}
+ .mobile-main .page-header>div:first-child{min-width:0;width:100%}
+ .mobile-main .page-header h1{font-size:32px;line-height:1.2;white-space:normal}
+ .mobile-main .page-header p{font-size:13px;line-height:1.55}
+ .mobile-main .animated-tabs{display:flex;max-width:100%;width:max-content;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none}
+ .mobile-main .animated-tabs::-webkit-scrollbar{display:none}
+ .mobile-main .animated-tabs button{flex:0 0 auto;white-space:nowrap;word-break:keep-all;letter-spacing:.02em;padding-left:14px;padding-right:14px;min-height:40px}
+ .mobile-main[data-page="training"] .mb-5.flex.items-center.justify-between{display:block;max-width:100%}
+ .mobile-main[data-page="training"] .grid-cols-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .mobile-main[data-page="training"] .grid-cols-3 .panel{padding:14px}
+ .mobile-main[data-page="training"] .grid-cols-3 .panel .text-\[24px\]{font-size:19px}
+ .mobile-main .career-shortcuts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .mobile-main .career-shortcuts button{width:100%;min-width:0;padding:10px 5px;white-space:nowrap;font-size:12px}
+ .mobile-main .text-gradient-orange{background:none!important;-webkit-text-fill-color:#ff6b20!important;color:#ff6b20!important}
+}
+@media(max-width:600px){.mobile-main[data-page="career"] .min-h-\[520px\]{height:520px}.mobile-main[data-page="career"] .min-h-\[520px\]>.relative{height:100%}}
+@media(max-width:600px){
+ .mobile-main[data-page="settings"] > div > .grid{grid-template-columns:minmax(0,1fr)!important}
+ .mobile-main[data-page="badges"] .badge-list{grid-template-columns:minmax(0,1fr)!important}
+ .mobile-main[data-page="badges"] .badge-list .panel{height:auto;min-height:160px}
+ .mobile-shell [class*="fixed inset-0"] .grid-cols-5{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .mobile-shell [class*="fixed inset-0"] .grid-cols-5 button:last-child{grid-column:span 2}
+ .mobile-shell [class*="fixed inset-0"] .grid-cols-5 button{height:100px}
+ .mobile-main[data-page="training"] .training-set{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .mobile-main[data-page="training"] .training-set>span:first-child{grid-column:1/-1;width:auto;text-align:left}
+ .mobile-main[data-page="training"] .training-set select{grid-column:1/-1;width:100%;max-width:none}
+ .mobile-main[data-page="training"] .training-set input{width:100%;min-width:0}
+ .mobile-main[data-page="training"] .training-set>span.mono{width:auto;text-align:left}
+ .mobile-main .field{font-size:16px}
+ .mobile-menu{max-height:calc(100dvh - 135px);overflow-y:auto}
+}
+@media(max-width:600px){.mobile-main[data-page="settings"] .grid.grid-cols-2{grid-template-columns:minmax(0,1fr)!important}}
